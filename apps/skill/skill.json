@@ -1,0 +1,28 @@
+{
+  "name": "ex-ai-skill",
+  "displayName": "前任AIskill",
+  "description": "通过聊天记录生成 AI 关系角色，并在 AI 工具中对话。",
+  "version": "0.1.0",
+  "entry": "dist/apps/skill/src/index.js",
+  "runtime": "node",
+  "permissions": [
+    "file.read",
+    "file.write",
+    "network.request",
+    "localStorage.read",
+    "localStorage.write"
+  ],
+  "commands": [
+    "activate",
+    "configure_provider",
+    "create_persona",
+    "upload_chat_record",
+    "generate_persona",
+    "chat",
+    "regenerate",
+    "feedback_not_like",
+    "list_personas",
+    "export_persona",
+    "delete_persona"
+  ]
+}
