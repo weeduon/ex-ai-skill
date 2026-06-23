@@ -4,11 +4,10 @@
   "type": "module",
   "description": "OpenClaw local AI persona skill.",
   "scripts": {
-    "dev": "tsx apps/skill/src/index.ts",
-    "build": "tsc -p tsconfig.json",
-    "start": "node dist/apps/skill/src/index.js",
-    "test": "vitest run",
-    "lint": "tsc -p tsconfig.json --noEmit"
+    "dev": "node apps/skill/src/index.js",
+    "start": "node apps/skill/src/index.js",
+    "build": "node --check apps/skill/src/index.js",
+    "test": "node --test tests/*.test.js"
   },
   "license": "AGPL-3.0-or-later",
   "engines": {
@@ -17,14 +16,6 @@
   "dependencies": {
     "adm-zip": "^0.5.16",
     "commander": "^12.1.0",
-    "nanoid": "^5.0.7",
-    "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "@types/adm-zip": "^0.5.5",
-    "@types/node": "^22.10.2",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2",
-    "vitest": "^2.1.8"
+    "nanoid": "^5.0.7"
   }
 }
